@@ -14,7 +14,7 @@ namespace HelloWorld
             InitializeComponent();
 
             //DependencyService.Register<MockDataStore>();
-            MainPage = new DataBinding();
+            MainPage = new Views.ListView();
         }
 
         protected override void OnStart()
