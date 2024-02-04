@@ -14,7 +14,7 @@ namespace HelloWorld
             InitializeComponent();
 
             //DependencyService.Register<MockDataStore>();
-            MainPage = new GridCodeBehind();
+            MainPage = new AbsoluteLayoutPage();
         }
 
         protected override void OnStart()
