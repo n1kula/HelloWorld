@@ -13,8 +13,8 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            //DependencyService.Register<MockDataStore>();
+            MainPage = new StackLayoutPage();
         }
 
         protected override void OnStart()

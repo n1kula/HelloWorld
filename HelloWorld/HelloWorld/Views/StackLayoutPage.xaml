@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Views.StackLayoutPage">
+    
+    <StackLayout Margin="30">
+        <Label Text="Hello World"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Margin="0,30,0,100"/>
+        <Label Text="Login"
+               FontSize="12"
+               FontAttributes="Bold"/>
+        <Entry Placeholder="Login"
+               Keyboard="Text"
+               HorizontalTextAlignment="Center" />
+        <Label Text="Haslo"
+               FontSize="12"
+               FontAttributes="Bold"/>
+        <Entry Placeholder="Haslo"
+               IsPassword="True"
+               Keyboard="Text"
+               HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Spacing="20">
+            <Button Text="Zaloguj"
+                    WidthRequest="150"
+                    BackgroundColor="LightBlue"
+                    CornerRadius="10"/>
+            <Button Text="Utworz konto"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    CornerRadius="10" />
+        </StackLayout>
+       
+    </StackLayout>
+    
+</ContentPage>

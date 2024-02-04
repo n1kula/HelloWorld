@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Views.ControlsPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="ContentContainer">
+            <BoxView HeightRequest="50" WidthRequest="50" Color="Blue" HorizontalOptions="Center" />
+            <Label Text="First Label" FontSize="Medium" FontFamily="Arial" TextColor="Blue" FontAttributes="Bold"/>
+            <Entry Keyboard="Numeric" Placeholder="Numeric value" />
+            <Button Text="Click me" Clicked="Button_Clicked" />
+            <CheckBox IsChecked="False" />
+            <Switch IsToggled="True" />
+            <DatePicker MinimumDate="1.01.2024" />
+            <Picker Title="Choose Day">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Poniedzialek</x:String>
+                        <x:String>Wtorek</x:String>
+                        <x:String>Sroda</x:String>
+                        <x:String>CZw</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
